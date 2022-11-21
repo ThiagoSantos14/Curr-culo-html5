@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="EI=edge">
+        <title>Curriculo</title>
+    </head>
+    <body background="https://cdn.wallpapersafari.com/35/67/3NCQwW.jpg">
+        <style>
+        #footer {
+            background-color: black;
+            color: white;
+        }
+        </style>
+        
+        <b><h1>Curriculo</h1></b>
+
+        <div id="formulario">
+            <div id="dados-pessoais">
+                <form action="formulario" method="GET">
+                    <fieldset>
+                        <b><legend>Dados Pessoais</legend></b>
+                        <br>
+                        <b>Nome:</b>
+                        <input type="text" name="nome" required placeholder="Name">
+                        <br>
+                        <b>Endereço:</b>
+                        <input type="text" name="endereco" required placeholder="Address"> <input type="number" name="numero" required placeholder="Number">
+                        <br>
+                        <b>Cidade:</b>
+                        <input type="text" name="cidade" required placeholder="City">
+                        <br>
+                        <b>Estado:</b>
+                        <select required>
+                            <option value="sao-paulo" selected>São Paulo</option>
+                            <option value="minas-gerais">Minas Gerais</option>
+                            <option value="rio-de-janeiro">Rio De Janeiro</option> 
+                            <option value="amazonas">Amazonas</option>
+                            <option value="bahia">Bahia</option>
+                            <option value="ceara">Ceará</option>
+                            <option value="para">Pará</option>
+                            <option value="mato-grosso">Mato Grosso</option>
+                            <option value="rio-grande-sul">Rio Grande Sul</option>
+                        </select>
+                        <br>
+                        <br>
+                        <b>Gênero:</b>
+                        <input type="radio" name="genero" value="masculino">Masculino
+                        <input type="radio" name="genero" value="feminino">Feminino
+                        <br>
+                        <br>
+                        <input type="reset">
+                    </fieldset>
+                </form>
+            </div>
+            <br>
+
+
+            <div id="cadastro">
+                <form>
+                    <fieldset>
+                        <legend>Dados De Cadastro</legend>
+                        <br>
+                        <b>Email</b>
+                        <br>
+                        <input type="email" name="email" required placeholder="Email@gmail.com">
+                        <br>
+                        <b>Senha</b>
+                        <br>
+                        <input type="password" name="senha" required placeholder="Password" minlength="6" maxlength="15">
+                        <br>
+                        <b>Telefone</b>
+                        <br>
+                        <input type="tel" name="telefone" required placeholder="(xx) xxxxx-xxxx">
+                        <br>
+                        <b>Nascimento</b>
+                        <br>
+                        <input type="date" name="nascimento" required  min="1930-12-31" max="2022-12-31">
+                        <br>
+                        <b>foto</b>
+                        <br>
+                        <input type="file" name="import-arquivo" required>
+                        <br>
+                        <br>
+                        <input type="reset">
+
+                    </fieldset>
+                </form>
+            </div>
+            <br>
+            <br>
+            <br>
+
+
+            <div id="dados-prof">
+                <form>
+                    <fieldset>
+                        <b><legend>Dados Profissionais</legend></b>
+                        <br>
+                        <b>Natureza do Cargo</b>
+                        <br>
+                        <input type="radio" name="nivel-profissao" value="estagio" checked>Estágio
+                        <input type="radio" name="nivel-profissao" value="junior">Junior
+                        <input type="radio" name="nivel-profissao" value="pleno">Pleno
+                        <input type="radio" name="nivel-profissao" value="senio">Sênio
+                        <br>
+                        <br>
+                        <br> 
+
+
+                        <b>Área de Interesse</b>
+                        <br>
+                        <input type="checkbox" name="area" value="frontend" checked>FrontEnd
+                        <input type="checkbox" name="area" value="backend">backend
+                        <input type="checkbox" name="area" value="fullstack">FullStack
+                        <br>
+                        <br>
+                        <br>
+
+                    
+                        <center>
+                        <b>Mini Currículo</b>
+                        <br>
+                        <textarea name="currículo" rows="30" cols="100" spellcheck="true" required placeholder="Enter your resume here"></textarea>
+                        </center>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="reset"> 
+                    
+
+
+                        <center>
+                            <input type="submit" name="enviar" value="Enviar" form="formulario" formaction="formulario" formmethod="GET" formenctype="application/x-www-form-urlencoded" formnovalidate>
+                        </center>   
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    
+        
+        <div id="footer">
+            <form>
+                <fieldset>
+                    <center>
+                        <h1>DESENVOLVIDOR POR: THIAGO SANTOS</h1>
+                    </center>
+                </fieldset>
+            </form>
+        </div>
+
+    </body>
+</html>
